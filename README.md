@@ -5,8 +5,8 @@
 * `jsPracticeLab.html`
 * `jquerylib_submit_example.html`
 
-### Names of people you have worked with on this assignment
-* **Yeongjae (Zack) Lim (zacklim)**
+### Names of people who worked on this assignment
+* **Yeongjae (Zack) Lim (zacklim)** - me (alone)
 
 ## Questions & code instructions
 
