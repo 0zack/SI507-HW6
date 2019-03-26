@@ -1,5 +1,10 @@
 # JavaScript assignment
 
+### Included files
+* `README.md`
+* `jsPracticeLab.html`
+* `jquerylib_submit_example.html`
+
 ### Names of people you have worked with on this assignment
 * **Yeongjae (Zack) Lim (zacklim)**
 
