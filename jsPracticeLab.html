@@ -27,6 +27,9 @@
 	function copyFunction(){
 		document.querySelector('#cheer').innerHTML += "Go blue!<br>"
 	}
+	function copyFunction2(){
+		document.querySelector('#cheer').innerHTML += "O Canada<br>"
+	}
 
 	function handleClick(){
 		alert("hello");
@@ -66,7 +69,7 @@ p{
 	<ul>
 		<li>Kent State</li>
 		<li>University of Pittsburgh</li>
-		<li>McGill University</li>
+		<li oncopy="copyFunction2()">McGill University</li>
 		<li>California State University Long Beach</li>
 		<li oncopy="copyFunction()">University of Michigan</li>
 	</ul>

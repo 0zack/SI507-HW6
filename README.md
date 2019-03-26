@@ -7,7 +7,7 @@
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
-I would put the character '/' twice like: //comments
+I have to put the character '/' twice for a comment, like: //comments
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
@@ -56,8 +56,19 @@ p{border: 3px solid #fe0000;}
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
-* **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
+I did adding another function below
+```js
+function copyFunction2(){
+		document.querySelector('#cheer').innerHTML += "O Canada<br>"
+}
+```
+and also change the 'li' element like:
+```html
+<li oncopy="copyFunction2()">McGill University</li>
+```
+I figured out how to do, watching the original function 'copyFunction2()'.
 
+* **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 ```js
 function handleClick(){
 	alert("hello");
@@ -115,4 +126,17 @@ $(document).ready(function(){
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
 
-I did.
+I did by changing the existing if conditional statement in JavaScript like:
+```js
+if(regex.test(currentValue) == false){
+        $("#result").html('<p class="error">Not valid!</p>').show().fadeOut(10000);
+        // Preventing form submission
+        event.preventDefault();
+} else {
+        if (currentValue == 'hello'){
+	        	$("#result").html('<p class="good">Hello to you too!</p>').show().fadeOut(10000);
+        } else {
+            		$("#result").html('<p class="good">Nice!</p>').show().fadeOut(10000);
+        }
+}
+```
