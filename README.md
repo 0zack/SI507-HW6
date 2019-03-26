@@ -7,13 +7,14 @@
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
-//comments
+I would put the character '/' twice like: //comments
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
-You should use '<script type="text/javascript">' before starting programming JavaScript.
+You need '<script type="text/javascript">' before JavaScript programming.
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+
 Two ways which are similar to the Python function 'print' are:
 ```js
 alert();
@@ -33,14 +34,13 @@ document.querySelector('h1').innerHTML = "Zack";
 ```
 * **What does the word `document` represent in this code? Explain briefly.**
 
-The word 'document' represent the whole code in the current html file.
+The word 'document' represents the whole code in the current html file.
 
 * **What is happening in line 12 ( 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
-`document.getElementsByTagName('li').length`
-finds the number of elements with the tag name 'li' and give the number to the element with the id 'items'. In this page, since the the elements of 'li' is 9, and the element with the id 'items' is <span> element, the text in the text box becomes 
+The line finds the number of elements with the tag name 'li' and give the number to the element with the id 'items'. In this page, since the the elements of 'li' is 9, and the element with the id 'items' is 'span' element, the text in the text box becomes 
 `The number of list items for this page: 9`
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
@@ -49,7 +49,7 @@ The color of the background will become white which is the default color.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-You can easily change the border color in CSS part.
+You can easily change the border color in CSS part like below:
 ```css
 p{border: 3px solid #fe0000;}
 ```
@@ -68,7 +68,7 @@ function handleClick(){
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
-Since the function 'handleClick()' has already been defined to show the pop-up text box in the JavaScript part, and the button element in HTML has onclick parameter for the function which works when the button is clicked.
+Because the function 'handleClick()' has already been defined to show the pop-up text box in the JavaScript part, and the button element in HTML has onclick parameter for the function which works when the button is clicked.
 
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
@@ -94,11 +94,11 @@ If the input is valid, the text is displayed with the class name good which its 
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
 
-Regex means a regular expression. It is used when you need to find some words, phrases, or sentences that match some conditions. For instance, a-z matches a character in the range "a" to "Z".
+Regex means a regular expression. It is used when you need to find some words, phrases, or sentences that match some conditions. For instance, a-z matches a character in the range "a" to "z".
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
-In a conditional statement, JavaScript uses parentheses to separate the execution statements, whereas Python uses clone (':') and indent.
+In a conditional statement, JavaScript uses parentheses ('{', '}') to separate the execution statements, whereas Python uses clone (':') and indent.
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
 
